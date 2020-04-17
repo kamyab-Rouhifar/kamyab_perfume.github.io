@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="screen_1" lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+<body>
+<header>
+    <div id="welcome"><h1>Welcome to Kamyab Perfume</h1></div>
+    <div id="headers">
+        <h2 style="text-align: center;">
+            Perfume is a key of our memories
+        </h2>
+    </div>
+    <nav>
+        <div class="List_header"  id="List_header_2">
+            <ul>
+                <li><a href="Main.html" target="_top">Home page</a></li>
+                <li><a href="Contact.html" target="_blank">Contact</a></li>
+                <li><a href="Honesty.html" target="_blank">Honesty</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="Resize()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        function Resize() {
+            let a = document.getElementById("List_header_2");
+            if (a.className === "List_header") {
+                a.className += " responsive";
+            } else {
+                a.className = "List_header";
+            }
+        }
+    </script>
+</header>
+<aside>
+<div class="women-section section">
+    <h3 style="color: #08ff39;">
+        &lt;Women section&gt;
+    </h3>
+    <div id="Image_woman">
+        <div id="image" style="padding-top: 1px;"></div>
+    </div>
+</div>
+<div class="men-section section">
+    <h3 style="color: #08ff39;">
+        &lt;Men section&gt;
+    </h3>
+    <div class="Image_man">
+        <div id="image1" style="padding-top: 14px;">
+            <div style="border-bottom: 4px groove darkblue;">
+                <figure>
+                    <figcaption class="caption_1">Chanel Paris</figcaption>
+                    <img
+                            class="Size_image"
+                            src="https://thumbs.gfycat.com/ClearcutEnchantedFinch-size_restricted.gif"
+                            alt="Perfume_Chanel_Paris"
+                    />
+                    <p class="Price" style="text-align: center;">Price: 260 $</p>
+                </figure>
+            </div>
+
+            <div style="border-bottom: 4px groove darkblue;">
+                <figure>
+                    <figcaption class="caption_1">Boss Cologne</figcaption>
+                    <img
+                            class="Size_image"
+                            src="https://www.azyaamode.com//files/stories/group0/article_header/Cover_1__6_[9].gif"
+                            alt="boss_cologne"
+                    />
+                    <p class="Price" style="text-align: center;">Price: 130 $</p>
+                </figure>
+            </div>
+            <div style="border-bottom: 4px groove darkblue;">
+                <figure>
+                    <figcaption class="caption_1">Sauvage Dior</figcaption>
+                    <img
+                            class="Size_image"
+                            src="https://www.sephora.com/productimages/sku/s2267797-main-zoom.jpg?imwidth=300"
+                            alt="sauvage_dior"
+                    />
+                    <p class="Price" style="text-align: center;">Price: 310 $</p>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+</aside>
+
+<main id="Enter">
+    <div id="Button">
+        <br />
+        <p>Please press "Enter" Button to see detail of website</p>
+        <button id="function">Show Description</button>
+    </div>
+    <br />
+    <div id="display"></div>
+    <div id="colors_woman">
+        <label for="colors"
+        >Choose a customized color: <mark>women section</mark>
+        </label>
+        <select name="colors" id="colors" onchange="change_color(this.value)">
+            <option value="0">Choose color (default)</option>
+            <option value="1">Pink</option>
+            <option value="2">Green</option>
+            <option value="3">Blue</option>
+            <option value="4">Black</option>
+            <option value="5">Romantic</option>
+        </select>
+    </div>
+    <div id="colors_man">
+        <form name="" method="post" action="">
+            <p>Choose a customized color: <mark>men section</mark></p>
+            <p>
+                <label for="Default">Default</label>
+                <input
+                        type="radio"
+                        name="Colors"
+                        value="Default"
+                        id="Default"
+                        onClick="changeColour('')"
+                />
+                <br />
+
+                <label for="Yellow">Yellow</label>
+                <input
+                        type="radio"
+                        name="Colors"
+                        value="Yellow"
+                        id="Yellow"
+                        onClick="changeColour('y')"
+                />
+                <br />
+
+                <label for="Red">Red</label>
+                <input
+                        type="radio"
+                        name="Colors"
+                        value="Red"
+                        id="Red"
+                        onClick="changeColour('r')"
+                />
+
+                <br />
+                <label for="Blue">Blue</label>
+                <input
+                        type="radio"
+                        name="Colors"
+                        value="Blue"
+                        id="Blue"
+                        onClick="changeColour('b')"
+                />
+
+                <br />
+                <label for="Romantic">Romantic</label>
+                <input
+                        type="radio"
+                        name="Colors"
+                        value="Romantic"
+                        id="Romantic"
+                        onClick="changeColour('rom')"
+                />
+            </p>
+        </form>
+    </div>
+    <form id="colors_restart">
+        <p>restart of your template :</p>
+        <button onclick="RESTART()">Restart</button>
+    </form>
+    <h4 style="color: #49ff18; text-align: center;">
+        <b>&lt;&nbsp;SPONSORSHIPS&nbsp;&gt;</b>
+    </h4>
+    <div style="border: 4px outset whitesmoke; margin-top: 4px;">
+        <a href="https://www.hugoboss.com/ca/en/fragrances-men/"
+                target="_blank">
+            <img
+                    src="https://camobluufragrance.com/wp-content/uploads/2018/04/boss-banner.jpg"
+                    alt="ads"
+                    width="442px"
+                    height="150px"
+            />
+        </a>
+        <div style="border-top: 3px solid whitesmoke;"></div>
+        <a href="http://www.iruelafinefragances.com/" target="_blank">
+            <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/08b50478477665.5ca5db2708596.gif"
+                    alt="ads"
+                    width="442px"
+                    height="150px"
+            />
+        </a>
+    </div>
+</main>
+<main style="
+        float: initial;
+        display: inline-block;
+        margin-left: 3%;
+        margin-top: 4%;
+      ">
+    <figure>
+        <figcaption style="
+            color: #8e5cff;
+            text-align: center;
+            font-weight: bolder;
+            font-size: large;
+          ">
+            Fragrance - Lancôme
+        </figcaption>
+        <video width="500" height="310" loop preload="auto" controls="">
+            <source src="Data/ads.mp4" type="video/mp4" />
+        </video>
+    </figure>
+</main>
+
+<script src="JS/color.js"></script>
+<script src="JS/Main.js"></script>
+<script src="JS/Button_function.js"></script>
+</body>
+</html>

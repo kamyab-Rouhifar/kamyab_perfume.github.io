@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html  class="screen_2" lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="JS/Contact.js"></script>
+</head>
+<body>
+<header>
+    <div id="Contact" ><h1>Contact form</h1></div>
+
+    <nav>
+        <div class="List_header">
+            <ul>
+                <li><a href="Main.html" target="_top">Home page</a></li>
+                <li><a href="Contact.html" target="_blank">Contact</a></li>
+                <li><a href="Honesty.html" target="_blank">Honesty</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<aside class="left_contact">
+<img width=200 height=1000 src="Data/perfume-background.jpg" alt="perfume-background"/>
+</aside>
+<main>
+<!--HTML FORM STARTING-->
+<section class ="main">
+    <form   name="Form" method="post" action="https://httpbin.org/post">
+    <h2>Please Type your information</h2>
+<aside >
+    <img  width=250 height=250 src="https://previews.123rf.com/images/catalin205/catalin2051503/catalin205150300423/38195315-contact-us-using-phone-number-email-or-website-address-concept-card-hold-by-hand-isolated-on-white-b.jpg"
+    alt="contact"
+    >
+</aside>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <section>
+
+            <div>
+                <label for="custname_First">First name:<sup>*</sup></label>
+                <input name="custname_First" id="custname_First" type="text" required="">
+                <p id="demo" style="color: red"></p>
+            </div>
+
+            <div>
+                <label for="custname_Last">Last name:<sup>*</sup> </label>
+                <input name="custname_Last" id="custname_Last" type="text" required="">
+                <p id="demo1" style="color: red"></p>
+            </div>
+
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <section>
+            <div>
+        <label>E-mail address:<sup>*</sup> <input type="email" name="custemail" placeholder="Example@gmail.com" required></label><br/>
+        <label>Address: <input type="text" name="address"></label>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <section>
+        <label for="city">City:<sup>*</sup> </label>
+        <select name="city" id="city">
+            <option value="Toronto">Toronto</option>
+            <option value="Edmonton">Edmonton</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="NewMarket">NewMarket</option>
+            <option value="Elliot Lake">Elliot Lake</option>
+            <option value="Ottawa">Ottawa</option>
+            <option value="Snow Lake">now Lake</option>
+            <option value="Montreal">Montreal</option>
+            <option value="Lakeshore">Lakeshore</option>
+        </select>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <section>
+            <div>
+        <label for="phone">Phone:<sup>*</sup></label>
+       <p> <input type="tel" id="phone"  name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               placeholder="xxx-xxx-xxxx"  title="10 digit phone number"   required>
+       </p>
+        <small><mark>Format: 111-222-3333</mark></small>
+            <br/>
+                <br/>
+
+        <label for="postal">Postal Code:<sup>*</sup></label>
+        <input type="tel" id="postal" name="postal" pattern="[A-Za-z][0-9][A-Za-z]-[0-9][A-Za-z][0-9]"
+              placeholder="xxx-xxx" title="6 digit Postal Code " required>
+
+        <small><mark>Format: M0M-0M0</mark></small>
+
+        <p><label> <input type="checkbox" name="phoned" value="yes"> Do you like to call you on phone ? </label>
+            </p>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <section>
+
+            <div>
+                <!---------------------------------------------------------------------------------------------------------------------------------------------->
+                <label class="Question_Type">&lt; Question Type &gt;</label>
+                <div class="form-check1" style="margin:0.3pc;">
+                    <input type="radio" name="Question" id="form-check1" value="Comment" title="Comment about website" tabindex="1">
+                    <label  for="form-check1">Comment</label>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="form-check2" style="margin:0.3pc;">
+                    <input  type="radio" name="Question" id="form-check2" value="Rating"  title="Rating about website" tabindex="2">
+                    <label  for="form-check2">Rating</label>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="form-check3" style="margin:0.3pc;">
+                    <input  type="radio" name="Question" id="form-check3" value="Issue" title="Issue about order" tabindex="3">
+                    <label  for="form-check3">Order Problem</label>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------------------------------------------->
+            </div>
+        </section>
+        <div id="submit">
+        <p> <input type="submit" title="Submitting to Database" value='Submit' onclick='validating()'  >
+        <input style="margin-left: 1%" type="reset"  title="Clearing the inputs" value='Clear'>
+        </p>
+</div>
+    </form>
+
+</section>
+</main>
+<!--HTML FORM ENDING-->
+<aside class="right_contact">
+    <img width=200 height=1000 src="Data/perfume-background.jpg" alt="perfume-background"/>
+</aside>
+</body>
+</html>
